@@ -10,3 +10,5 @@ theme:
     # タブ表示を有効.
     features:
         - tabs
+nav:
+    - home: home.md
