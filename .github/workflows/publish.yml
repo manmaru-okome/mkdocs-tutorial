@@ -13,4 +13,4 @@ jobs:
         with:
           python-version: 3.10.4
       - run: pip install -r requirements.txt
-      - run: mkdocs gh-deploy --force
+      - run: cd mkdocs && mkdocs gh-deploy --force
