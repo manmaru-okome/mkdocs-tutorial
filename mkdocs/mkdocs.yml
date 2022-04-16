@@ -12,3 +12,4 @@ theme:
         - tabs
 nav:
     - home: home.md
+    - test1: test1.md
