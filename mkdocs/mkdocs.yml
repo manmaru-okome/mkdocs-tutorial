@@ -1,0 +1,12 @@
+site_name: My Docs
+docs_dir: 'docs'
+theme:
+    name: material
+    language: ja
+    icon:
+        logo: material/school
+        repo: fontawesome/brands/git-alt
+    favicon: favicon.png
+    # タブ表示を有効.
+    features:
+        - tabs
