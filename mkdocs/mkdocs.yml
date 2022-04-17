@@ -5,11 +5,35 @@ theme:
     language: ja
     icon:
         logo: material/school
-        repo: fontawesome/brands/git-alt
+        repo: material/github
     favicon: favicon.png
     # タブ表示を有効.
     features:
         - tabs
+        - search.suggest
+        - search.highlight
+        - navigation.tabs
+
+repo_url: https://github.com/manmaru-okome/mkdocs-tutorial
+edit_uri: edit/main/mkdocs/docs/
 nav:
     - home: home.md
     - test1: test1.md
+    - flow: 
+      - flow: flow.md
+      - token: token.md
+      - conflict: conflict.md
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - admonition
+  - codehilite
+plugins:
+  - search:
+      lang: ja
+extra_css:
+    - "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    # - "css/custom.css"
